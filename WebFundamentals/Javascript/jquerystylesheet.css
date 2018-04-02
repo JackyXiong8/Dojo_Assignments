@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hiding{
+   background-color: yellow;
+   padding: 10px;
+   height: 100px;
+   border: 1px solid black;
+   display: block;
+}
+.showing{
+    background-color: orange;
+    padding: 10px;
+   height: 100px;
+   border: 1px solid black;
+   display: block;
+}
+.toggling{
+    background-color: pink;
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+}
+.sliding{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightblue;
+}
+.fading{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: turquoise;
+}
+.addingclass{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: springgreen
+}
+.beforeafter{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: peru;
+}
+.appending{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightslategray;
+}
+.htmltext{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightseagreen;
+}
+.attribute{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightcoral;
+}
+.getvalue{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightgoldenrodyellow;
+}
+.textdiv{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: lightgreen;
+}
+.dataclass{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: khaki;
+}
+.slidetoggle{
+    display: inline-block;
+}
+.constantslide{
+    display: inline-block;
+}

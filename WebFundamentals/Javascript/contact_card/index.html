@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacts!</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="infoform">
+                <form>
+                    <p>First Name</p>
+                    <input type="text" name="firstname" class="firstname" value="First Name">
+                    <p>Last Name</p> 
+                    <input type="text" name="lastname" class="lastname" value="Last Name">
+                    <p class="textboxp" > Description</p>
+                    <textarea name="description" class="descriptionbox" value='Description' rows="8" cols="30"></textarea>
+                </form>
+                <button class="add">Add</button>
+            </div>
+            <div class="contactcards">
+                <div class="card1">
+                    <h2 class="namehere"></h2>
+                    <p class="card_description">Click for Description!</p>
+                    <p class="descriptionhere"></p>
+                </div>
+            </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $('.descriptionhere').hide();
+            $('.add').click(function(){
+                $('.namehere').append($('.firstname').val())
+                $('.namehere').append($('.lastname').val())
+                $('.descriptionhere').append($('.descriptionbox').val())
+            })
+        })
+        </script>
+    </body>
+</html>

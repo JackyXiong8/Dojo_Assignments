@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users information</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="table">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact#</th>
+            </tr>
+            <tr>
+                <td><p class="firstnamedata"></p></td>
+                <td><p class="lastnamedata"></p></td>
+                <td><p class="emaildata"></p></td>
+                <td><p class="contactdata"></p></td>
+            </tr>
+        </table>
+        </div>
+        <div class='form'>
+            <h1>Add User</h1>
+            <form>
+            <div class="firstname">
+                    <p>First Name:</p>
+                    <input class="firstnameinput" type="text" name="first_name" value="First Name">
+                </div>
+                <div class="lastname">
+                    <p>Last Name:</p>
+                    <input class="lastnameinput" type="text"name='last_name' value="Last Name">
+                </div>
+                <div class="emailaddress">
+                    <p>Email Address:</p>
+                    <input class="emailinput" type="text" name="email_address" value="Email Address">
+                </div>
+                <div class="phone">
+                    <p>Contact No.:</p>
+                    <input class="phoneinput" type="text" name="phone_#" value="Phone #">
+                </div>
+             </form>
+            </div>
+        <button class="appendinfo">Add</button>
+        <script>
+        $(document).ready(function(){
+            $('.appendinfo').click(function(){
+                // $('form').submit(function(){  
+                    var fname =  $('.firstnameinput').val();
+                    console.log(fname);
+                    $('.firstnamedata').append($('.firstnameinput').val());
+                    $('.lastnamedata').append($('.lastnameinput').val());
+                    $('.emaildata').append($('.emailinput').val());
+                    $('.contactdata').append($('.phoneinput').val());
+                    return false;
+                
+                
+            })
+        })
+        </script>
+    </body>
+</html>

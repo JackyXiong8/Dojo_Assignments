@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Functions</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquerystylesheet.css">
+        <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+            $('.hidebutton').click(function(){
+            $('.hidetext').hide(function(){});
+        })
+
+        $('.showtext').hide();
+        $('.showbutton').click(function(){
+            $('.showtext').show(function(){})
+        })
+        $('.togglebutton').click(function(){
+            $('.toggletext').toggle(function(){})
+        })
+        $('.slideupbutton').click(function(){
+            $('.slidetext').slideUp();
+        })
+        $('.slidedownbutton').click(function(){
+            $('.slidetext').slideDown();
+        })
+        $('.slidetoggle').click(function(){
+            $('.constantslide').slideToggle();
+        })
+        $('.fadeout').click(function(){
+            $('.fadingtext').fadeOut();
+        })
+        $('.fadein').click(function(){
+            $('.fadingtext').fadeIn();
+        })
+        $('.redtextbutton').click(function(){
+            $('.classredtext').addClass('red');
+        })
+        $('.bluetextbutton').click(function(){
+            $('.classbluetext').addClass('blue');
+        })
+        $('.before').click(function(){
+            $('.beforeafterthis').before('I appeared before this!');
+        })
+        $('.after').click(function(){
+            $('.beforeafterthis').after('This appeared after!');
+        })
+        $('.append').click(function(){
+            $('.appending').append('Hello!');
+        })
+        $('.addhtml').click(function(){
+            $('.addhere').html('More text');
+        })
+        $('.changelink').click(function(){
+            $('.google').attr("href", "http://api.jquery.com/");
+        })
+        $('.valuebutton').click(function(){
+            alert($('.valuethis').val());
+        })
+        $('.textbutton').click(function(){
+            $('.textp').text('You just added me!')
+        })
+        $('.adddata').click(function(){
+            $('.dataalert').data('popup', 'Congratulations!');
+        })
+        $('.function').click(function(){
+            alert($('.dataalert').data('popup'));
+        })
+        })       
+        </script>
+
+        <div class="hiding">
+            <h2>Hide</h2>
+            <button class="hidebutton">
+                .Hide
+            </button>
+            <p>Press the button to hide the text</p>
+            <p class="hidetext">
+                Hide this!
+            </p>
+        </div>
+
+        <div class="showing">
+            <h2>Show</h2>
+            <button class="showbutton">
+                .show
+            </button>
+            <p>Press the button to show text</p>
+            <p class="showtext">
+                surprise!
+            </p>
+        </div>
+
+            <div class="toggling">
+                <h2>Toggle</h2>
+                <button class="togglebutton">
+                    Toggle!
+                </button>
+                <p>Press this button to toggle a text</p>
+                <p class="toggletext">
+                    Hello...goodbye
+                </p>
+            </div>
+        <div class="sliding">
+           <h2>sliding</h2>
+           <p class="slidetext">Press the buttons to move me around.</p>
+           <button class="slideupbutton">
+               Slideup
+           </button>
+           <button class="slidedownbutton">
+               Slidedown
+           </button>
+           <p>This button can do both!</p>
+           <p class="constantslide">
+               Hello!
+           </p>
+           <button class="slidetoggle">
+               Toggle
+           </button>
+        </div>
+
+        <div class="fading">
+            <p class="fadingtext">Fade</p>
+            <button class="fadein">
+                Fade In
+            </button>
+            <button class="fadeout">
+                Fade Out
+            </button>
+        </div>
+
+        <div class="addingclass">
+            <h2>Adding class</h2>
+            <p class="classredtext">Press the button to make this text red</p>
+            <button class="redtextbutton">
+                red
+            </button>
+            <p class="classbluetext">Press the button to make this text blue</p>
+            <button class="bluetextbutton">
+                blue
+            </button>
+        </div>
+
+        <div class="beforeafter">
+            <h2>Before and After</h2>
+            <p class="beforeafterthis">
+                Press the buttons to add text that will appear before and after this.
+            </p>
+            <button class="before">
+                before
+            </button>
+            <button class="after">
+                after
+            </button>
+        </div>
+
+        <div class="appending">
+            <h2>Append</h2>
+            <button class="append">
+                Click me!
+            </button>
+        </div>
+
+        <div class="htmltext">
+            <h2>Html</h2>
+            Hi! Press the button to add more text to me!
+            <button class="addhtml">
+                Button
+            </button>
+            <p class="addhere"></p>
+        </div>
+
+        <div class="attribute">
+            <h2>Attributes</h2>
+            <a href="https://www.google.com/" class="google">Google.com</a>
+            <p>Press the button to change the link</p>
+            <button class="changelink">Button</button>
+        </div>
+
+        <div class="getvalue">
+            <h2>Values</h2>
+            <input class="valuethis" type="text" value="This is the value">
+            <p>Press the button to get the value of the input.</p>
+            <button class="valuebutton">
+                Button
+            </button>
+        </div>
+
+        <div class="textdiv">
+            <h2>text</h2>
+            <p class="textp"></p>
+            <p>Press the button to input text</p>
+            <button class="textbutton">
+                Button
+            </button>
+        </div>
+
+        <div class="dataclass">
+            <h2>text</h2>
+            <p>Press add to make the second button function!</p>
+            <button class="adddata">
+                Add
+            </button>
+            <button class="function">Function</button>
+            <div class="dataalert"></div>
+        </div>
+    </body>
+</html>

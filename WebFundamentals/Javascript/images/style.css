@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    background-color: #D5D2AE;
+    width: 800px;
+    padding: 20px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+}

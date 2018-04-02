@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgreen;
+}
+button{
+    display: block;
+    margin-top: 20px;
+    background-color: aqua;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+p{
+    font-size: 25px;
+}
+.red{
+    color: red;
+}
+.margin{
+    margin: 5px;
+}
+.blue{
+    color: blue;
+}
+
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.small{
+    font-size: 8px;
+}
+.big{
+    font-size: 48px;
+}
+.smallmargin{
+    margin: 10px;
+}
+.mediummargin{
+    margin: 25px;
+}
+.largemargin{
+    margin: 50px;
+}
+/* .addingclass{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    display: block;
+    background-color: springgreen;
+} */

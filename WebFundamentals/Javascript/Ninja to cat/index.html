@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <img class="ninja0" src="ninja0.png" alt="ninja0">
+        <img class="ninja1" src="ninja1.png" alt="ninja1">
+        <img class="ninja2" src="ninja2.png" alt="ninja2">
+        <img class="ninja3" src="ninja3.png" alt="ninja3">
+        <img class="ninja4" src="ninja4.png" alt="ninja4">
+
+        <img class="cat" src="cat0.png" alt="cat0">
+        <img class="cat" src="cat1.png" alt="cat1">
+        <img class="cat" src="cat2.png" alt="cat2">
+        <img class="cat" src="cat3.png" alt="cat3">
+        <img class="cat" src="cat4.png" alt="cat4">
+
+        <script>
+        $(document).ready(function(){
+
+            $('.cat').hide();
+            
+            // $('.ninja1').click(function(){
+            //     $(this).attr('src', 'cat0.png')
+            //     if($(this).attr('src')=='cat0.png'){
+            //         $(this).click(function(){
+            //             $(this).attr('src', 'ninja0.png')
+            //         })
+            //     }
+            // })
+            $(".ninja0").click(function(){ if($(".ninja0").attr("src") == "ninja0.png"){
+				$(this).attr("src", "cat0.png");
+				}
+				else if($(".ninja0").attr("src") == "cat0.png"){
+				$(this).attr("src", "ninja0.png")
+				} 
+			});
+            
+            $(".ninja1").click(function(){ if($(".ninja1").attr("src") == "ninja1.png"){
+				$(this).attr("src", "cat1.png");
+				}
+				else if($(".ninja1").attr("src") == "cat1.png"){
+				$(this).attr("src", "ninja1.png")
+				} 
+			});
+            $(".ninja2").click(function(){ if($(".ninja2").attr("src") == "ninja2.png"){
+				$(this).attr("src", "cat2.png");
+				}
+				else if($(".ninja2").attr("src") == "cat2.png"){
+				$(this).attr("src", "ninja2.png")
+				} 
+			});
+            $(".ninja3").click(function(){ if($(".ninja3").attr("src") == "ninja3.png"){
+				$(this).attr("src", "cat3.png");
+				}
+				else if($(".ninja3").attr("src") == "cat3.png"){
+				$(this).attr("src", "ninja3.png")
+				} 
+			});
+            $(".ninja4").click(function(){ if($(".ninja4").attr("src") == "ninja4.png"){
+				$(this).attr("src", "cat4.png");
+				}
+				else if($(".ninja4").attr("src") == "cat4.png"){
+				$(this).attr("src", "ninja4.png")
+				} 
+			});
+
+		});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Functions</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        /* .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        } */
+        </style>
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+        
+        $('.redtextbutton').click(function(){
+            $('.trialtext').addClass('red');
+        })
+        $('.bluetextbutton').click(function(){
+            $('.trialtext').addClass('blue');
+        }) 
+        $('.boldbutton').click(function(){
+            $('.trialtext').addClass('bold');
+        })
+        $('.italicbutton').click(function(){
+            $('.trialtext').addClass('italic');
+        }) 
+        $('.bigbutton').click(function(){
+            $('.trialtext').addClass('big');
+        })
+        $('.smallbutton').click(function(){
+            $('.trialtext').addClass('small');
+        })
+        $('.margin1').click(function(){
+            $('.trialtext').addClass('smallmargin');
+        })
+        $('.margin2').click(function(){
+            $('.trialtext').addClass('mediummargin');
+        })
+        $('.margin3').click(function(){
+            $('.trialtext').addClass('largemargin');
+        })
+        // $('.bluetoobutton').click(function(){
+        //     $('.trialtext').addClass('bluetoo');
+        // })
+        })  
+        </script>
+        <div class="addingclass">
+            <p class="trialtext">Press the button to modify this text.</p>
+            <button class="redtextbutton">
+                red
+            </button>
+            <button class="bluetextbutton">
+                blue
+            </button>
+            <button class="boldbutton">
+                bold
+            </button>
+            <button class="italicbutton">
+                italic
+            </button>
+            <button class="smallbutton">
+                Small
+            </buton>
+            <button class="bigbutton">
+                Big
+            </button>
+            <button class="margin1">
+                Small Margin
+            </button>
+            <button class="margin2">
+                Medium Margin
+            </button>
+            <button class="margin3">
+                Large Margin
+            </button>
+
+            <!-- <button class="bluetoobutton">
+                blue too
+            </button> -->
+        </div>
+
+    </body>
+</html>
